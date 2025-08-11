@@ -2,12 +2,12 @@ group = "app.revanced"
 
 patches {
     about {
-        name = "ReVanced Patches template"
-        description = "Patches template for ReVanced"
-        source = "git@github.com:revanced/revanced-patches-template.git"
-        author = "ReVanced"
-        contact = "contact@revanced.app"
-        website = "https://revanced.app"
+        name = "Maps Deltarune Weird Route Jingle"
+        description = "Replace rerouting sound with Deltarune weird route jingle"
+        source = "git@github.com:sticks-stuff/maps-weird-route.git"
+        author = "sharlot"
+        contact = "@stick_twt"
+        website = "https://twitter.com/stick_twt"
         license = "GNU General Public License v3.0"
     }
 }
