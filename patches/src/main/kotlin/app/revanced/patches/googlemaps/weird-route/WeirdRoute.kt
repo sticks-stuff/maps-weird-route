@@ -15,9 +15,10 @@ private val weirdRouteResourcePatch = resourcePatch {
 
     execute {
         addResources("googlemaps", "weird_route.weirdRouteResourcePatch")
+        // Overwrite the rerouting sound by providing a file with the same name as the original
         copyResources(
             "googlemaps",
-            ResourceGroup("raw", "snd_ominous.ogg"),
+            ResourceGroup("raw", "da_traffic_report_dring_dring.ogg"),
         )
     }
 }
@@ -33,7 +34,7 @@ val weirdRouteJinglePatch = bytecodePatch(
 
     compatibleWith(
         "com.google.android.apps.maps"(
-            "25.32.00",
+            "25.32.00.790560726",
         )
     )
 
