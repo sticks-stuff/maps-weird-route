@@ -70,11 +70,15 @@ fun ResourcePatchContext.copyResources(
     for (resourceGroup in resources) {
         resourceGroup.resources.forEach { resource ->
             val resourceFile = "${resourceGroup.resourceDirectoryName}/$resource"
-            Files.copy(
-                inputStreamFromBundledResource(sourceResourceDirectory, resourceFile)!!,
-                targetResourceDirectory.resolve(resourceFile).toPath(),
-                StandardCopyOption.REPLACE_EXISTING,
-            )
+            val inputStream = inputStreamFromBundledResource(sourceResourceDirectory, resourceFile)
+                ?: throw PatchException("Resource not found: $resourceFile")
+            val outFile = targetResourceDirectory.resolve(resourceFile)
+            outFile.parentFile?.mkdirs()
+            inputStream.use { input ->
+                outFile.outputStream().use { output ->
+                    input.copyTo(output)
+                }
+            }
         }
     }
 }
