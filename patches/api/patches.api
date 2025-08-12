@@ -1,3 +1,11 @@
+public final class app/revanced/patches/all/misc/packagename/ChangePackageNamePatchKt {
+	public static field packageNameOption Lapp/revanced/patcher/patch/Option;
+	public static final fun getChangePackageNamePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+	public static final fun getPackageNameOption ()Lapp/revanced/patcher/patch/Option;
+	public static final fun setOrGetFallbackPackageName (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun setPackageNameOption (Lapp/revanced/patcher/patch/Option;)V
+}
+
 public final class app/revanced/patches/all/misc/resources/AddResourcesPatchKt {
 	public static final fun addResource (Ljava/lang/String;Lapp/revanced/util/resource/BaseResource;)Z
 	public static final fun addResources (Lapp/revanced/patcher/patch/Patch;Lkotlin/jvm/functions/Function1;)Z
@@ -10,8 +18,27 @@ public final class app/revanced/patches/all/misc/resources/AddResourcesPatchKt {
 	public static final fun getAddResourcesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
+public final class app/revanced/patches/googlemaps/certificate/BypassCertificateChecksPatchKt {
+	public static final fun getBypassCertificateChecksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/googlemaps/gms/GmsCoreSupportPatchKt {
+	public static final fun getGmsCoreSupportResourcePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
 public final class app/revanced/patches/googlemaps/weird_route/WeirdRouteKt {
 	public static final fun getWeirdRouteJinglePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/shared/misc/gms/FingerprintsKt {
+	public static final field GET_GMS_CORE_VENDOR_GROUP_ID_METHOD_NAME Ljava/lang/String;
+}
+
+public final class app/revanced/patches/shared/misc/gms/GmsCoreSupportPatchKt {
+	public static final fun gmsCoreSupportPatch (Ljava/lang/String;Ljava/lang/String;Lapp/revanced/patcher/Fingerprint;Ljava/util/Set;Lapp/revanced/patcher/Fingerprint;Lapp/revanced/patcher/patch/Patch;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/revanced/patcher/patch/BytecodePatch;
+	public static synthetic fun gmsCoreSupportPatch$default (Ljava/lang/String;Ljava/lang/String;Lapp/revanced/patcher/Fingerprint;Ljava/util/Set;Lapp/revanced/patcher/Fingerprint;Lapp/revanced/patcher/patch/Patch;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/revanced/patcher/patch/BytecodePatch;
+	public static final fun gmsCoreSupportResourcePatch (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapp/revanced/patcher/patch/Option;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/revanced/patcher/patch/ResourcePatch;
+	public static synthetic fun gmsCoreSupportResourcePatch$default (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapp/revanced/patcher/patch/Option;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
 public final class app/revanced/patches/shared/misc/mapping/ResourceElement {

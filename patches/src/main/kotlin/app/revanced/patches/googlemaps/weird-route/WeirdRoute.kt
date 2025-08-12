@@ -7,6 +7,10 @@ import app.revanced.patches.all.misc.resources.addResources
 import app.revanced.patches.all.misc.resources.addResourcesPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.copyResources
+import app.revanced.patches.googlemaps.gms.gmsCoreSupportResourcePatch
+// import app.revanced.patches.googlemaps.permissions.renamePermissionsPatch
+import app.revanced.patches.googlemaps.certificate.bypassCertificateChecksPatch
+
 
 private val weirdRouteResourcePatch = resourcePatch {
     dependsOn(
@@ -30,11 +34,15 @@ val weirdRouteJinglePatch = bytecodePatch(
 ) {
     dependsOn(
         weirdRouteResourcePatch,
+        // gmsCoreSupportResourcePatch,
+        // renamePermissionsPatch,
+        // bypassCertificateChecksPatch,
     )
 
     compatibleWith(
         "com.google.android.apps.maps"(
             "25.32.00.790560726",
+            "10.62.1",
         )
     )
 
