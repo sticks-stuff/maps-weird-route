@@ -18,14 +18,6 @@ public final class app/revanced/patches/all/misc/resources/AddResourcesPatchKt {
 	public static final fun getAddResourcesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
-public final class app/revanced/patches/googlemaps/certificate/BypassCertificateChecksPatchKt {
-	public static final fun getBypassCertificateChecksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
-public final class app/revanced/patches/googlemaps/gms/GmsCoreSupportPatchKt {
-	public static final fun getGmsCoreSupportResourcePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
-}
-
 public final class app/revanced/patches/googlemaps/weird_route/WeirdRouteKt {
 	public static final fun getWeirdRouteJinglePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }

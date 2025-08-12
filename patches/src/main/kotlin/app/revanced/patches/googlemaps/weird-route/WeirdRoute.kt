@@ -7,9 +7,9 @@ import app.revanced.patches.all.misc.resources.addResources
 import app.revanced.patches.all.misc.resources.addResourcesPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.copyResources
-import app.revanced.patches.googlemaps.gms.gmsCoreSupportResourcePatch
+// import app.revanced.patches.googlemaps.gms.gmsCoreSupportResourcePatch
 // import app.revanced.patches.googlemaps.permissions.renamePermissionsPatch
-import app.revanced.patches.googlemaps.certificate.bypassCertificateChecksPatch
+// import app.revanced.patches.googlemaps.certificate.bypassCertificateChecksPatch
 
 
 private val weirdRouteResourcePatch = resourcePatch {
