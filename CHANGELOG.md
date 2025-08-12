@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sticks-stuff/maps-weird-route/compare/v1.0.0...v1.1.0) (2025-08-12)
+
+
+### Features
+
+* remove everything ([c5fc2a3](https://github.com/sticks-stuff/maps-weird-route/commit/c5fc2a342593f1537a08523a0540a1ace1d6c61c))
+
 # 1.0.0 (2025-08-12)
 
 
