@@ -1,3 +1,10 @@
+# 1.0.0 (2025-08-12)
+
+
+### Features
+
+* trigger release ([0bdcabe](https://github.com/sticks-stuff/maps-weird-route/commit/0bdcabe01b4ff9023d18fb526ecab9b5a2dbc406))
+
 ## [1.0.4](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.3...v1.0.4) (2024-11-05)
 
 ## [1.0.4-dev.2](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.4-dev.1...v1.0.4-dev.2) (2024-11-05)
